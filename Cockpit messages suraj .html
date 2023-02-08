@@ -1,0 +1,307 @@
+<!-- Developed by Suraj Talekar -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+  .tooltip {
+  position: relative;
+  display: inline-block;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+.duplicate {
+  width: 100%;
+}
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+.button {
+  color: white;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #04AA6D;
+  border: 1px solid #ccc;
+}
+.cancelbtn {
+  color: white;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border: 1px solid #ccc;
+}
+</style>
+  <title></title>
+</head>
+<body>
+  <a href="https://hugo-cockpit.nzz.ch" target="_blank">Cockpit Website</a>
+  <!-- username -->
+<br><br>
+    Username <input type="text" id="username" value="suraj@lieferanten.nzz.ch">
+  <button class="button" onclick="username()" >Copy Username</button>
+  <!-- password -->
+  &nbsp &nbsp &nbsp &nbsp Password <input type="password" id="password" value="12345">
+  <button class="button" onclick="password()" >Copy password</button>
+  <!-- Bilder fehlt | Image missing -->
+<div>
+<p>1) <input type="text" value="Bilder fehlt | Image missing" id="Bilder">
+<button class="button" onclick="myFunction()" >Copy text</button></p>
+
+
+<!-- Verlinkungen fehlt | Link missing -->
+<p>2) <input type="text" value="Verlinkungen fehlt | Link missing" id="Verlinkungen">
+<button class="button" onclick="myFunction1()">Copy text</button></p>
+
+<!-- Text fehlt | Text missing -->
+<p>3) <input type="text" value="Text fehlt | Text missing" id="Text fehlt | Text missing">
+<button class="button" onclick="myFunction2()">Copy text</button></p>
+
+<!-- Dupliziertes Bild gefunden | Duplicated image found -->
+<p>4) <input  type="text" value="Dupliziertes Bild gefunden | Duplicated image found" id="Dupliziertes Bild gefunden | Duplicated image found">
+<button class="button" onclick="myFunction3()">Copy text</button></p>
+
+
+<!-- Bildvorschau fehlt | Image Preview missing -->
+<p>5) <input  type="text" value="Bildvorschau fehlt | Image Preview missing" id="Bildvorschau fehlt | Image Preview missing">
+<button class="button" onclick="myFunction4()">Copy text</button></p>
+
+<!-- Texte und/oder Bilder fehlen | Texts and/or images are missing -->
+<p>6) <input  type="text" value="Texte und/oder Bilder fehlen | Texts and/or images are missing" id="Texte und/oder Bilder fehlen | Texts and/or images are missing">
+<button class="button" onclick="myFunction5()">Copy text</button></p>
+
+<!-- Bild um 90 Grad gedreht | Image rotated in 90 Degree -->
+<p>7) <input  type="text" value="Bild um 90 Grad gedreht | Image rotated in 90 Degree" id="Bild um 90 Grad gedreht | Image rotated in 90 Degree">
+<button class="button" onclick="myFunction6()">Copy text</button></p>
+
+<script type="text/javascript" >
+ function username() {
+  // Get the text field
+  var copyText = document.getElementById("username");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+ function password() {
+  // Get the text field
+  var copyText = document.getElementById("password");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+    function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("Bilder");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+  function myFunction1() {
+  // Get the text field
+  var copyText = document.getElementById("Verlinkungen");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+function myFunction2() {
+  // Get the text field
+  var copyText = document.getElementById("Text fehlt | Text missing");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+function myFunction3() {
+  // Get the text field
+  var copyText = document.getElementById("Dupliziertes Bild gefunden | Duplicated image found");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+function myFunction4() {
+  // Get the text field
+  var copyText = document.getElementById("Bildvorschau fehlt | Image Preview missing");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+function myFunction5() {
+  // Get the text field
+  var copyText = document.getElementById("Texte und/oder Bilder fehlen | Texts and/or images are missing");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+function myFunction6() {
+  // Get the text field
+  var copyText = document.getElementById("Bild um 90 Grad gedreht | Image rotated in 90 Degree");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+function mysub1() {
+  // Get the text field
+  var copyText = document.getElementById("Cockpit | Fernausgaben | STATUS OKAY");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+function mysub2() {
+  // Get the text field
+  var copyText = document.getElementById("Cockpit | Fernausgaben | STATUS: FEHLER");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+function mysub3() {
+  // Get the text field
+  var copyText = document.getElementById("Cockpit | Alle Ausgaben | STATUS OKAY");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+function mysub4() {
+  // Get the text field
+  var copyText = document.getElementById("Cockpit | Alle Ausgaben | STATUS: FEHLER");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  // alert("Copied the text: " + copyText.value);
+}
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+<form action="">
+<input type="text"  placeholder="Paste here for test" />
+<button class="cancelbtn" type="reset" value="Reset">Reset</button>
+</form>
+</div>
+<div>
+  <p><input type="text" value="Cockpit | Fernausgaben | STATUS OKAY" id="Cockpit | Fernausgaben | STATUS OKAY">
+<button class="button" onclick="mysub1()" >Copy text</button></p>
+
+  <p><input type="text" value="Cockpit | Fernausgaben | STATUS: FEHLER" id="Cockpit | Fernausgaben | STATUS: FEHLER">
+<button class="button" onclick="mysub2()" >Copy text</button></p>
+
+
+  <p><input type="text" value="Cockpit | Alle Ausgaben | STATUS OKAY" id="Cockpit | Alle Ausgaben | STATUS OKAY">
+<button class="button" onclick="mysub3()" >Copy text</button></p>
+
+  <p><input type="text" value="Cockpit | Alle Ausgaben | STATUS: FEHLER" id="Cockpit | Alle Ausgaben | STATUS: FEHLER">
+<button class="button" onclick="mysub4()" >Copy text</button></p>
+</div>
+</body>
+</html>
